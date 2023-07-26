@@ -62,20 +62,20 @@ main h2 {
 
 main #top {
     color: black;
-    background-image: url(/images/man_woman_push_up.jpg);
+    background-image: url(https://yoshibne.github.io/ML-Strength-Website/images/man_woman_push_up.jpg);
     background-size: 80%;
 }
 
 main #middle {
     color: black;
-    background-image: url(/images/super_man.jpg);
+    background-image: url(https://yoshibne.github.io/ML-Strength-Website/images/super_man.jpg);
     background-size: 80%;
     text-align: right;
 }
 
 main #bottom {
     color: black;
-    background-image: url(/images/welcome.jpg);
+    background-image: url(https://yoshibne.github.io/ML-Strength-Website/images/welcome.jpg);
     text-align: center;
     font-weight: 900;
 }
@@ -127,22 +127,22 @@ main #bottom {
 }
 
 #services {
-    background-image: url(/images/gym.jpg);
+    background-image: url(https://yoshibne.github.io/ML-Strength-Website/images/gym.jpg);
     background-size: 100%;
 }
 
 #about {
-    background-image: url(/images/trainer.jpg);
+    background-image: url(https://yoshibne.github.io/ML-Strength-Website/images/trainer.jpg);
     background-size: 95%;
 }
 
 #staffs {
-    background-image: url(/images/fitness_diet.jpg);
+    background-image: url(https://yoshibne.github.io/ML-Strength-Website/images/fitness_diet.jpg);
     background-size: 100%;
 }
 
 #enquiry {
-    background-image: url(/images/women_exercise.jpg);
+    background-image: url(https://yoshibne.github.io/ML-Strength-Website/images/women_exercise.jpg);
     background-size: 80%;
 }
 
@@ -183,17 +183,17 @@ main #bottom {
 }
 
 .who {
-    background-image: url(/images/man_in_gym.jpg);
+    background-image: url(https://yoshibne.github.io/ML-Strength-Website/images/man_in_gym.jpg);
     background-size: 100%;
 }
 
 .about-staffs {
-    background-image: url(/images/trainer.jpg);
+    background-image: url(https://yoshibne.github.io/ML-Strength-Website/images/trainer.jpg);
     background-size: 70%;
 }
 
 .owner {
-    background-image: url(/images/boxing_man.jpg);
+    background-image: url(https://yoshibne.github.io/ML-Strength-Website/images/boxing_man.jpg);
     background-size: 100%;
 }
 
