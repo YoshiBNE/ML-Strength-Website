@@ -13,9 +13,14 @@ header {
     padding-left: 1em;
 }
 
+#logo {
+    display: none;
+}
+
 h1 {
     font-size: 3em;
 }
+
 
 nav {
     background-color: black;
@@ -48,6 +53,12 @@ main {
     background-color: white;
 }
 
+p{
+    color: black;
+    padding: 0.5em;
+    line-height: 1.5em;
+}
+
 /* ###### Home ###### */
 
 main h2 {
@@ -62,7 +73,7 @@ main h2 {
 
 main #top {
     color: black;
-    background-image: url(https://yoshibne.github.io/ML-Strength-Website/images/man_woman_push_up.jpg);
+    background-image: url(https://yoshibne.github.io/ML-Strength-Website/ML-Strength-Website/images/man_woman_push_up.jpg);
     background-size: 80%;
 }
 
@@ -146,6 +157,30 @@ main #bottom {
     background-size: 80%;
 }
 
+.heading {
+    background-position: center;
+    background-size: 80%;
+}
+
+.heading h2 {
+    font-weight: 900;
+    font-style: italic;
+    padding: 1em;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 1em;
+    height: 0.3em;
+    margin: 0.4em auto;
+
+}
+
 /* ###### About ###### */
 
 #inner-link {
@@ -181,36 +216,343 @@ main #bottom {
 #inner-link div:hover a {
     color: white;
 }
+/* ############################# */
+#about-content {
+    background-color: #E02020;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+}
+
+#about-content h3 {
+    font-size: 1.5em;
+    padding-left: 1em;
+}
+
+#about-content div > p {
+    color: black;
+    font-weight: 600;
+    background-color: rgb(255, 255, 255, 0.7);
+    background-blend-mode: lighten;
+    padding: 2em;
+}
 
 .who {
-    background-image: url(https://yoshibne.github.io/ML-Strength-Website/images/man_in_gym.jpg);
+    background-image: url(/images/man_in_gym.jpg);
+    background-position: center;
     background-size: 100%;
 }
 
 .about-staffs {
-    background-image: url(https://yoshibne.github.io/ML-Strength-Website/images/trainer.jpg);
-    background-size: 70%;
+    background-image: url(/images/trainer.jpg);
+    background-position: center;
+    background-size: 80%;
 }
 
 .owner {
-    background-image: url(https://yoshibne.github.io/ML-Strength-Website/images/boxing_man.jpg);
-    background-size: 100%;
+    background-image: url(/images/boxing_man.jpg);
+    background-position: center;
+    background-size: 90%;
 }
 
+#backTop {
+    text-align: center;
+    background-color: #E02020;
+    color: white;
+}
 
 /* ######  ###### */
 
 /* ###### Services ###### */
+h4 {
+    color: black;
+    font-weight: 800;
+    font-size: 1.5em;
+    padding-top: 0.5em;
+    padding-left: 1em;
+}
+
+h4::before {
+    content: url(/images/icon_exercise.png)
+}
+
+#services-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    background-image: url('/images/woman_running.jpg');
+    background-position: center;
+    background-color: rgb(255, 255, 255, 0.5);
+    background-blend-mode: lighten;
+}
+
+#services-content div {
+    width: 50%;
+}
+
+#class-list li {
+    color: black;
+    line-height: 1.5em;
+    float: none;
+}
 
 
 
 /* ######  ###### */
 
 /* ###### Staffs ###### */
-
+#staffs-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    background-image: url('/images/yoga.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-color: rgb(255, 255, 255, 0.5);
+    background-blend-mode: lighten;
+}
 
 
 /* ######  ###### */
 
 /* ###### Enquiry ###### */
+#content-form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    color: white;
+    padding-left: 2em;
+    background-color: #E02020;
+}
 
+form {
+    width: 60%;
+    min-width: 500px;
+    font-size: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+figure {
+    min-width: 580px;
+}
+
+#message {
+    resize: none;
+}
+
+
+
+
+
+
+/* popup */
+/* Popup container */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+visibility: hidden;
+width: 800px;
+background-color: #555;
+color: #fff;
+text-align: center;
+border-radius: 6px;
+padding: 8px 0;
+position: absolute;
+z-index: 1;
+bottom: 125%;
+left: 50%;
+margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+content: "";
+position: absolute;
+top: 100%;
+left: 50%;
+margin-left: -5px;
+border-width: 5px;
+border-style: solid;
+border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+visibility: visible;
+-webkit-animation: fadeIn 1s;
+animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+from {opacity: 0;}
+to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+from {opacity: 0;}
+to {opacity:1 ;}
+}
+
+
+/* For Mobile */
+
+@media screen and (max-width: 768px) {
+
+    body {
+        min-width: auto;
+        overflow-x: hidden !important;
+    }
+
+    main {
+        margin: 0;
+        overflow-x: hidden !important;
+    }
+
+    header {
+        padding: 0;
+        display: table-cell;
+    }
+
+    #logo {
+        display: block;
+        margin-left: 0;
+        float: left;
+    }
+
+    #logo img {
+        margin-left: 0;
+        height: 2em;
+    }
+
+    .header-content h1 {
+        display: none;
+    }
+
+    .heading h2 {
+        font-size: 1.5em;
+        padding: 0.5em;
+    }
+
+    #services-content {
+        flex-direction: column;
+        background-position:center;
+        background-size: cover;
+    }
+
+    #services-content div {
+        width: 100%;
+    }
+
+    h4 {
+        font-size: 1em;
+        padding: 0.5em;
+        height: 3em;
+        margin: 0;
+        color: white;
+        background-color: #E02020;
+    }
+
+    #header-home {
+        font-size: 1.5em;
+        margin-top: 2em;
+    }
+
+    #top, #middle, #bottom {
+        font-size: 1em;
+    }
+
+    .main-junction {
+        padding-top: 0;
+    }
+
+    #inner-link div {
+        height: 1em;
+        padding: 0;
+    }
+
+    #inner-link div > a {
+        display: block;
+        font-size: 0.3em;
+        margin-top: 1em;
+    }
+
+    #link-who {
+        margin-top: 1em;
+    }
+
+    #about-content div > h3 {
+        margin: 0;
+    }
+
+    .hamburger {
+        display: block;
+        background-color: black;
+        width: 2em;
+        height: 2em;
+        float: right;
+        border-radius: 0.4em;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .bar {
+        background-color: white;
+        width: 1em;
+        height: 0.1em;
+        transition: all 0.8s ease-in-out;
+    }
+
+    nav {
+        position: fixed;
+        transform: translateX(250%);
+        top: 2.5em;
+    }
+
+    .nav-active {
+        transform: translateX(130%) !important;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .navbar li {
+        margin-top: 0.4em;
+        margin-bottom: 0.4em;
+        
+    }
+
+    /* Enquiry */
+
+    form {
+        min-width: none;
+        width: 200px;
+    }
+
+    #content-form label, .gender, .interest, #classChoice, .avoid, figure, .popup, .helpVideo {
+        display: none !important;
+    }
+
+    #fname, #lname, #emailAddress {
+        width: 200px;
+    }
+
+    #message {
+        width: 250px;
+        height: 100px;
+    }
+
+    #submit {
+        margin-left: 100px !important;
+    }
+
+
+}
